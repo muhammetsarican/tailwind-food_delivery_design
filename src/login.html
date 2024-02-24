@@ -1,13 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="login">Login</div>
+
+<body
+    class="flex container font-nunito text-black bg-white lg:bg-gradient-to-r lg:from-white lg:from-50% lg:to-primary lg:to-50% dark:bg-gray-900 dark:text-white dark:lg:bg-gradient-to-r dark:lg:from-gray-900 dark:lg:from-50% dark:lg:to-primary dark:lg:to-50%">
+    <!-- Left Part - Start -->
+    <div class="w-full h-[55dvh] lg:h-[85dvh] px-5 lg:w-[40%]">
+        <!-- Navigation - Start -->
+        <div class="flex flex-wrap py-4">
+            <div class="w-full flex gap-10 justify-between items-center">
+                <!-- Logo - Start -->
+                <div class="logo text-center">
+                    <p class="flex flex-col items-start font-extrabold text-2xl capitalize">food<span
+                            class="text-primary lowercase">delivery</span>
+                    </p>
+                </div>
+                <!-- Logo - End -->
+                <!-- Dark Mode - Start -->
+                <div class="flex justify-end menu w-full font-bold items-center gap-3">
+                    <button class="border-2 w-[50px] h-[22px] rounded-full p-1 dark:border-primary" id="theme-button">
+                        <div
+                            class="min-w-[10px] max-w-[10px] min-h-[10px] max-h-[10px] bg-gray-200 rounded-full dark:translate-x-7 dark:bg-primary animate-pulse">
+                        </div>
+                    </button>
+                </div>
+                <!-- Dark Mode - End -->
+            </div>
+        </div>
+        <!-- Navigation - End -->
+        <!-- Body - Start -->
+        <div class="h-full">
+            <!-- Login - Start -->
+            <div class="login flex flex-col justify-center items-start h-full w-full lg:w-[75%]">
+                <h1 class="text-6xl font-bold py-5">Login</h1>
+                <p class="text-md text-gray-700 py-5">Sign in with your data that you entered during your registration.
+                </p>
+                <form action="" class="flex flex-col gap-3 py-5 w-full">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-xs p-1">
+                            Email
+                        </label>
+                        <input class="h-[45px] rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
+                            type="email" name="name" id="name" placeholder="name@example.com">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="password" class="text-xs p-1">
+                            Password
+                        </label>
+                       <div class="relative w-full">
+                         <input class="h-[45px] w-full rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
+                             type="password" name="password" id="password" placeholder="min. 8 characters">
+                         <span class="absolute right-2 inset-y-3"><img src="../assets/icons/mobile-page/form/eye on.svg" alt=""></span>
+                       </div>
+                    </div>
+                    <div class="py-5 flex items-center gap-1">
+                        <input class="w-[20px] h-[20px]" type="checkbox" name="" id="">
+                        <label for="">
+                            Keep me logged in
+                        </label>
+                    </div>
+                    <input class="bg-primary text-white h-[45px] rounded-md font-bold" type="submit" value="Login">
+                    <a href="" class="text-primary font-bold text-center">Forgot password</a>
+                </form>
+            </div>
+            <!-- Login - End -->
+            <!-- Signup - Start -->
+            <p class="text-center w-full lg:w-[75%]">Don't have an account? 
+                <span class="text-primary font-bold">Sign up</span>
+            </p>
+            <!-- Signup - End -->
+        </div>
+        <!-- Body - End -->
     </div>
+    <!-- Left Part - End -->
+    <!-- Right Part - Start -->
+    <div class="h-dvh w-[60%] bg-primary hidden lg:block">
+        <!-- Container - Start -->
+        <div class="container bg-red-500">
+            <!-- Comments - Start -->
+            <div class="relative bg-gray-500">
+                <div class="absolute">Comment</div>
+                <div class="absolute">Comment</div>
+                <div class="absolute">Comment</div>
+            </div>
+            <!-- Comments - End -->
+            <!-- Slogan - Start -->
+            <div class="text-center bg-green-500">
+                <h3 class="text-lg font-bold">Leave reviews for all meals</h3>
+                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam incidunt
+                    voluptatum inventore nostrum perferendis nulla autem id assumenda amet.</p>
+            </div>
+            <!-- Slogan - End -->
+        </div>
+        <!-- Container - End -->
+    </div>
+    <!-- Right Part - End -->
+    <!-- Theme Button Script -->
+    <script>
+        const themeButtons = document.querySelectorAll("#theme-button");
+        let isThemeDark = true;
+
+        themeButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                if (isThemeDark) {
+                    document.all[0].classList.value = "light";
+                    isThemeDark = false;
+                } else {
+                    document.all[0].classList.value = "dark";
+                    isThemeDark = true;
+                }
+            })
+        })
+    </script>
+    <!-- Theme Button Script -->
 </body>
+
 </html>
