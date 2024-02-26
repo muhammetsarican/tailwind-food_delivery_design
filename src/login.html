@@ -10,98 +10,273 @@
 </head>
 
 <body
-    class="flex container font-nunito text-black bg-white lg:bg-gradient-to-r lg:from-white lg:from-50% lg:to-primary lg:to-50% dark:bg-gray-900 dark:text-white dark:lg:bg-gradient-to-r dark:lg:from-gray-900 dark:lg:from-50% dark:lg:to-primary dark:lg:to-50%">
-    <!-- Left Part - Start -->
-    <div class="w-full h-[55dvh] lg:h-[85dvh] px-5 lg:w-[40%]">
-        <!-- Navigation - Start -->
-        <div class="flex flex-wrap py-4">
-            <div class="w-full flex gap-10 justify-between items-center">
-                <!-- Logo - Start -->
-                <div class="logo text-center">
-                    <p class="flex flex-col items-start font-extrabold text-2xl capitalize">food<span
-                            class="text-primary lowercase">delivery</span>
+    class="font-nunito text-black bg-white lg:bg-gradient-to-r lg:from-white lg:from-50% lg:to-primary lg:to-50% dark:bg-gray-900 dark:text-white dark:lg:bg-gradient-to-r dark:lg:from-gray-900 dark:lg:from-50% dark:lg:to-primary dark:lg:to-50%">
+    <div class="flex h-fit">
+        <!-- Left Part - Start -->
+        <div class="px-5 w-full h-[55dvh] lg:w-[40%] lg:h-[85dvh]">
+           <div class="w-[95%] mx-auto h-full lg:w-[80%] lg:ms-auto lg:mx-0">
+             <!-- Navigation - Start -->
+             <div class="flex flex-wrap py-4">
+                <div class="w-full flex gap-10 justify-between items-center">
+                    <!-- Logo - Start -->
+                    <div class="logo text-center">
+                        <p class="flex flex-col items-start font-extrabold text-2xl capitalize">food<span
+                                class="text-primary lowercase">delivery</span>
+                        </p>
+                    </div>
+                    <!-- Logo - End -->
+                    <!-- Dark Mode - Start -->
+                    <div class="flex justify-end menu w-full font-bold items-center gap-3">
+                        <button class="border-2 w-[50px] h-[22px] rounded-full p-1 dark:border-primary"
+                            id="theme-button">
+                            <div
+                                class="min-w-[10px] max-w-[10px] min-h-[10px] max-h-[10px] bg-gray-200 rounded-full dark:translate-x-7 dark:bg-primary animate-pulse">
+                            </div>
+                        </button>
+                    </div>
+                    <!-- Dark Mode - End -->
+                </div>
+            </div>
+            <!-- Navigation - End -->
+            <!-- Body - Start -->
+            <div class="h-full">
+                <!-- Login - Start -->
+                <div class="login flex flex-col justify-center items-start h-full w-full lg:w-[75%]">
+                    <h1 class="text-6xl font-bold py-5">Login</h1>
+                    <p class="text-md text-gray-700 py-5">Sign in with your data that you entered during your
+                        registration.
                     </p>
-                </div>
-                <!-- Logo - End -->
-                <!-- Dark Mode - Start -->
-                <div class="flex justify-end menu w-full font-bold items-center gap-3">
-                    <button class="border-2 w-[50px] h-[22px] rounded-full p-1 dark:border-primary" id="theme-button">
-                        <div
-                            class="min-w-[10px] max-w-[10px] min-h-[10px] max-h-[10px] bg-gray-200 rounded-full dark:translate-x-7 dark:bg-primary animate-pulse">
+                    <form action="" class="flex flex-col gap-3 py-5 w-full">
+                        <div class="flex flex-col">
+                            <label for="name" class="text-xs p-1">
+                                Email
+                            </label>
+                            <input
+                                class="h-[45px] rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
+                                type="email" name="name" id="name" placeholder="name@example.com">
                         </div>
-                    </button>
+                        <div class="flex flex-col">
+                            <label for="password" class="text-xs p-1">
+                                Password
+                            </label>
+                            <div class="relative w-full">
+                                <input
+                                    class="h-[45px] w-full rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
+                                    type="password" name="password" id="password" placeholder="min. 8 characters">
+                                <span class="absolute right-2 inset-y-3"><img
+                                        src="../assets/icons/login-page/form/eye on.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="py-5 flex items-center gap-1">
+                            <input class="w-[20px] h-[20px]" type="checkbox" name="" id="">
+                            <label for="">
+                                Keep me logged in
+                            </label>
+                        </div>
+                        <input class="bg-primary text-white h-[45px] rounded-md font-bold" type="submit" value="Login">
+                        <a href="" class="text-primary font-bold text-center">Forgot password</a>
+                    </form>
                 </div>
-                <!-- Dark Mode - End -->
-            </div>
-        </div>
-        <!-- Navigation - End -->
-        <!-- Body - Start -->
-        <div class="h-full">
-            <!-- Login - Start -->
-            <div class="login flex flex-col justify-center items-start h-full w-full lg:w-[75%]">
-                <h1 class="text-6xl font-bold py-5">Login</h1>
-                <p class="text-md text-gray-700 py-5">Sign in with your data that you entered during your registration.
+                <!-- Login - End -->
+                <!-- Signup - Start -->
+                <p class="text-center w-full lg:w-[75%]">Don't have an account?
+                    <span class="text-primary font-bold">Sign up</span>
                 </p>
-                <form action="" class="flex flex-col gap-3 py-5 w-full">
-                    <div class="flex flex-col">
-                        <label for="name" class="text-xs p-1">
-                            Email
-                        </label>
-                        <input class="h-[45px] rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
-                            type="email" name="name" id="name" placeholder="name@example.com">
-                    </div>
-                    <div class="flex flex-col">
-                        <label for="password" class="text-xs p-1">
-                            Password
-                        </label>
-                       <div class="relative w-full">
-                         <input class="h-[45px] w-full rounded-md border-2 text-sm p-3 focus:border-none focus:ring-quaternary"
-                             type="password" name="password" id="password" placeholder="min. 8 characters">
-                         <span class="absolute right-2 inset-y-3"><img src="../assets/icons/login-page/form/eye on.svg" alt=""></span>
-                       </div>
-                    </div>
-                    <div class="py-5 flex items-center gap-1">
-                        <input class="w-[20px] h-[20px]" type="checkbox" name="" id="">
-                        <label for="">
-                            Keep me logged in
-                        </label>
-                    </div>
-                    <input class="bg-primary text-white h-[45px] rounded-md font-bold" type="submit" value="Login">
-                    <a href="" class="text-primary font-bold text-center">Forgot password</a>
-                </form>
+                <!-- Signup - End -->
             </div>
-            <!-- Login - End -->
-            <!-- Signup - Start -->
-            <p class="text-center w-full lg:w-[75%]">Don't have an account? 
-                <span class="text-primary font-bold">Sign up</span>
-            </p>
-            <!-- Signup - End -->
+            <!-- Body - End -->
+           </div>
         </div>
-        <!-- Body - End -->
-    </div>
-    <!-- Left Part - End -->
-    <!-- Right Part - Start -->
-    <div class="h-dvh w-[60%] bg-primary hidden lg:block">
-        <!-- Container - Start -->
-        <div class="container bg-red-500">
-            <!-- Comments - Start -->
-            <div class="relative bg-gray-500">
-                <div class="absolute">Comment</div>
-                <div class="absolute">Comment</div>
-                <div class="absolute">Comment</div>
+        <!-- Left Part - End -->
+        <!-- Right Part - Start -->
+        <div class="h-dvh w-[60%] bg-primary hidden lg:block">
+            <!-- Container - Start -->
+            <div class="container p-5">
+                <!-- Comments - Start -->
+                <div class="relative w-full h-[70dvh]">
+                    <div class="absolute bg-white text-black rounded-2xl start-[15%] top-[5%]">
+                        <!-- Top - Start -->
+                        <div class="top flex p-5 border-b justify-between items-center gap-10">
+                            <div class="inner-left">
+                                <h6 class="font-bold text-sm">Overall rating</h6>
+                                <div class="rating-box flex gap-2 items-center">
+                                    <h4 class="rating text-lg text-primary font-semibold">4.2</h4>
+                                    <div class="rating-stars flex gap-1 items-center">
+                                        <img src="../assets/icons/login-page/comment/rating-star/active.svg" alt="">
+                                        <img src="../assets/icons/login-page/comment/rating-star/active.svg" alt="">
+                                        <img src="../assets/icons/login-page/comment/rating-star/active.svg" alt="">
+                                        <img src="../assets/icons/login-page/comment/rating-star/active.svg" alt="">
+                                        <img src="../assets/icons/login-page/comment/rating-star/passive.svg" alt="">
+                                    </div>
+                                    <h6 class="vote-count text-xs text-gray-700">3 votes</h6>
+                                </div>
+                            </div>
+                            <button class="font-semibold text-primary border border-primary px-5 py-3 rounded-lg">Leave
+                                review</button>
+                        </div>
+                        <!-- Top - End -->
+                        <!-- Body - Start -->
+                        <div class="body flex flex-col items-center">
+                            <div class="sorting border border-gray-300 w-fit px-3 py-1 my-3 rounded-lg">
+                                <label for="sort" class="text-gray-500 text-sm">Sort by: </label>
+                                <select name="" id="sort" class="bg-transparent text-sm">
+                                    <option value="new">Newest first</option>
+                                </select>
+                            </div>
+                            <div class="comments-box">
+                                <div class="comment p-3 border-t border-gray-100">
+                                    <div class="profile-box flex gap-3 rounded-full">
+                                        <img src="../assets/images/login-page/comment/user-avatar/Savannah Miles.svg"
+                                            alt="">
+                                        <div class="profile-info">
+                                            <p class="name font-semibold text-sm">Savannah Miles</p>
+                                            <div class="user-rating flex gap-2 items-center">
+                                                <div class="rating-stars flex gap-1 items-center">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                </div>
+                                                <p class="rate-date text-[0.6rem] font-semibold text-gray-500">10 days
+                                                    ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text text-sm w-[300px] ms-[35px] p-3 text-gray-700">Lorem ipsum
+                                        dolor sit amet
+                                        consectetur adipisicing elit. Officiis eius et facere rerum officia.</div>
+                                    <div class="like-box flex gap-4 ms-[35px] px-3 py-2">
+                                        <div class="like flex gap-2 items-center">
+                                            <img src="../assets/icons/login-page/comment/like-dislike/like.svg" alt="">
+                                            <label class="text-[0.7rem] text-gray-500" for="">14</label>
+                                        </div>
+                                        <div class="dislike flex gap-2 items-center">
+                                            <img src="../assets/icons/login-page/comment/like-dislike/dislike.svg"
+                                                alt="">
+                                            <label class="text-[0.7rem] text-gray-500" for="">4</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment p-3 border-t border-gray-100">
+                                    <div class="profile-box flex gap-3 rounded-full">
+                                        <img src="../assets/images/login-page/comment/user-avatar/Jacob Jones.svg"
+                                            alt="">
+                                        <div class="profile-info">
+                                            <p class="name font-semibold text-sm">Jacob Jones</p>
+                                            <div class="user-rating flex gap-2 items-center">
+                                                <div class="rating-stars flex gap-1 items-center">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/active.svg"
+                                                        alt="">
+                                                    <img src="../assets/icons/login-page/comment/rating-star/passive.svg"
+                                                        alt="">
+                                                </div>
+                                                <p class="rate-date text-[0.6rem] font-semibold text-gray-500">1 days
+                                                    ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-text text-sm w-[300px] ms-[35px] p-3 text-gray-700">Lorem ipsum
+                                        dolor sit amet
+                                        consectetur adipisicing elit. Officiis eius et facere rerum officia.</div>
+                                    <div class="like-box flex gap-4 ms-[35px] px-3 py-2">
+                                        <div class="like flex gap-2 items-center">
+                                            <img src="../assets/icons/login-page/comment/like-dislike/like.svg" alt="">
+                                            <label class="text-[0.7rem] text-gray-500" for="">14</label>
+                                        </div>
+                                        <div class="dislike flex gap-2 items-center">
+                                            <img src="../assets/icons/login-page/comment/like-dislike/dislike.svg"
+                                                alt="">
+                                            <label class="text-[0.7rem] text-gray-500" for="">4</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Body - End -->
+                    </div>
+                    <div class="absolute bg-white text-black rounded-2xl max-w-[330px] end-[20%] top-[10%]">
+                        <!-- Top - Start -->
+                        <div class="img-box p-3">
+                            <img class="rounded-lg w-[330px]" src="../assets/images/login-page/comment/menu/img.svg" alt="">
+                        </div>
+                        <!-- Top - End -->
+                        <!-- Body - Start -->
+                        <div class="info px-3">
+                            <h4 class="font-bold text-lg">Roll set</h4>
+                            <p class="text-gray-500 text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Quasi, iusto.</p>
+                        </div>
+                        <!-- Body - End -->
+                        <!-- Bottom - Start -->
+                        <div class="price-add flex justify-between p-3">
+                            <div class="price flex gap-1">
+                                <p class="font-extrabold text-2xl">$</p>
+                                <p class="font-extrabold text-2xl">22.56</p>
+                            </div>
+                            <button
+                                class="text-2xl text-primary px-2.5 py-0.5 bg-[#F3F4FF] rounded-2xl flex items-center justify-center">+</button>
+                        </div>
+                        <!-- Bottom - End -->
+                    </div>
+                    <div class="absolute flex bg-white text-black rounded-2xl shadow-[10px_0px_60px_30px_rgba(0,0,0,0.5)] start-[10%] bottom-[10%]">
+                        <div class="img p-3">
+                            <img class="rounded-lg w-[180px]" src="../assets/images/login-page/comment/meal/sushi.svg"
+                                alt="">
+                        </div>
+                        <div class="info py-3 flex flex-col gap-2 justify-evenly">
+                            <div class="h4 font-bold text-lg">Nigiri set</div>
+                            <p class="text-gray-500 text-xs max-w-[350px]">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.
+                                Repudiandae nam quibusdam facere!</p>
+                            <p class="price font-extrabold text-2xl">$ 16.80</p>
+                        </div>
+                        <!-- Count Cart - Start -->
+                        <div class="count-cart px-3 py-5 flex gap-5 flex-col mt-5 ms-5 items-center">
+                            <div class="count flex gap-3 items-center">
+                                <button
+                                    class="decrease text-lg text-gray-300 bg-gray-100 w-[20px] h-[20px] flex items-center justify-center rounded-full">-</button>
+                                <p class="font-bold text-sm">1</p>
+                                <button
+                                    class="increase text-lg bg-gray-200 w-[20px] h-[20px] flex items-center justify-center rounded-full">+</button>
+                            </div>
+                            <button
+                                class="bg-[#F3F4FF] text-primary rounded-lg flex gap-3 items-center px-3 py-2 font-bold text-sm"><span
+                                    class="text-xl">+</span>Add to cart</button>
+                        </div>
+                        <!-- Count Cart - End -->
+                    </div>
+                </div>
+                <!-- Comments - End -->
+                <!-- Slogan - Start -->
+                <div class="text-center text-white flex gap-5 flex-col items-center p-5">
+                    <h3 class="font-bold text-4xl">Leave reviews for all meals</h3>
+                    <p class="text-md max-w-[60%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam incidunt
+                        voluptatum inventore nostrum perferendis nulla autem id assumenda amet.</p>
+                    <div class="slider-dots flex gap-2 items-center my-5">
+                        <div class="w-[10px] h-[10px] rounded-full bg-gray-400"></div>
+                        <div class="w-[10px] h-[10px] rounded-full bg-white"></div>
+                        <div class="w-[10px] h-[10px] rounded-full bg-gray-400"></div>
+                        <div class="w-[10px] h-[10px] rounded-full bg-gray-400"></div>
+                    </div>
+                </div>
+                <!-- Slogan - End -->
             </div>
-            <!-- Comments - End -->
-            <!-- Slogan - Start -->
-            <div class="text-center bg-green-500">
-                <h3 class="text-lg font-bold">Leave reviews for all meals</h3>
-                <p class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam incidunt
-                    voluptatum inventore nostrum perferendis nulla autem id assumenda amet.</p>
-            </div>
-            <!-- Slogan - End -->
+            <!-- Container - End -->
         </div>
-        <!-- Container - End -->
+        <!-- Right Part - End -->
     </div>
-    <!-- Right Part - End -->
     <!-- Theme Button Script -->
     <script>
         const themeButtons = document.querySelectorAll("#theme-button");
