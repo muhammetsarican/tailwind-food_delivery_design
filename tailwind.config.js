@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: ["./src/**/*.{html,js}", "./**/*.{html,js}"],
   theme: {
@@ -17,7 +19,11 @@ module.exports = {
       'nunito': 'Nunito, sans-serif'
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function({addVariant}){
+      addVariant('hocus', ['&:hover', '&:focus'])
+    })
+  ],
   darkMode: "class"
 }
 
