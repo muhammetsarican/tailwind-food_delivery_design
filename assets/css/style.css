@@ -3518,6 +3518,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+:is(.dark .hover\:dark\:text-white):hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 :is(.dark .focus\:dark\:bg-secondary):focus{
   --tw-bg-opacity: 1;
   background-color: rgb(237 238 242 / var(--tw-bg-opacity));
