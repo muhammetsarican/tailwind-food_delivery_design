@@ -4,23 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Page</title>
+    <title>Navigation - Food Delivery</title>
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="min-h-dvh flex w-full justify-center items-center">
+    <div class="min-h-dvh flex flex-col w-full justify-center items-center">
+        <h1 class="text-center text-5xl p-5 font-bold">Food Delivery</h1>
+        <h1 class="text-center text-2xl p-5 font-bold">Navigation Page</h1>
         <div class="nav flex gap-5 flex-col w-[35%] h-[70%] p-20 rounded-3xl shadow-xl ">
-            <button class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white">
-                <a href="src/home.html" class="no-underline text-xl">Home</a>
-            </button>
-            <button class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white">
-                <a href="src/login.html" class="no-underline text-xl">Login</a>
-            </button>
-            <button class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white">
-                <a href="src/settings.html" class="no-underline text-xl">Settings</a>
-            </button>
+            <a href="src/home.html" class="no-underline text-xl">
+                <button
+                    class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white w-full">
+                    Home
+                </button>
+            </a>
+            <a href="src/login.html" class="no-underline text-xl">
+                <button
+                    class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white w-full">
+                    Login
+                </button>
+            </a>
+            <a href="src/settings.html" class="no-underline text-xl">
+                <button
+                    class="rounded-3 border border-primary text-primary font-semibold rounded-xl px-6 py-2 shadow-xl hover:bg-primary hover:text-white w-full">
+                    Settings
+                </button>
+            </a>
         </div>
     </div>
 </body>
